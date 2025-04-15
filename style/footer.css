@@ -1,0 +1,42 @@
+/* Assurez-vous que le body et html occupent toute la hauteur */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le contenu principal doit prendre tout l'espace disponible */
+main {
+    flex: 1;
+}
+
+/* Footer reste en bas */
+footer {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+}
+
+footer .bi {
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+footer .bi:hover {
+    transform: scale(1.2);
+}
