@@ -9,6 +9,7 @@ echo "<h1>Insert</h1>";
 <script>
     $(document).ready(function() {
         let add = "<?php echo $_GET["add"] ?>";
+        $('#back-link').attr('href', 'index.php?action=GestionIT&click=produit');
 
         if (add == "product") {
             console.log("add product");
@@ -141,6 +142,8 @@ echo "<h1>Insert</h1>";
                 });
             }
         } else if (add == "brand") {
+            $('#back-link').attr('href', 'index.php?action=GestionIT&click=brand');
+
             $(".form").append(`
                 <label for="brand_name">Brand Name:</label>
                 <input type="text" id="brand_name" name="brand_name" required><br><br>
@@ -178,6 +181,8 @@ echo "<h1>Insert</h1>";
                 });
             }
         } else if (add == "category") {
+            $('#back-link').attr('href', 'index.php?action=GestionIT&click=category');
+
             $(".form").append(`
                 <label for="category_name">Category Name:</label>
                 <input type="text" id="category_name" name="category_name" required><br><br>
@@ -215,6 +220,8 @@ echo "<h1>Insert</h1>";
                 });
             }
         } else if (add == "stock") {
+            $('#back-link').attr('href', 'index.php?action=GestionIT&click=stock');
+
             $(".form").append(`
                 <label for="product_id">Product:</label>
                 <select id="product_id" name="product_id">
@@ -327,6 +334,8 @@ echo "<h1>Insert</h1>";
                 });
             }
         } else if (add == "store") {
+            $('#back-link').attr('href', 'index.php?action=GestionIT&click=store');
+
             $(".form").append(`
                 <label for="store_name">Store Name:</label>
                 <input type="text" id="store_name" name="store_name" required><br><br>
@@ -363,7 +372,7 @@ echo "<h1>Insert</h1>";
                                 <label for="store_name">Store Name:</label>
                                 <input type="text" id="store_name" name="store_name" required><br><br>
                                 <label for="store_phone">Store Phone:</label>
-                                <input type="text" id="store_phone" name="store_phone" required><br><br>
+                                <input type="text" id="store_phone" name="store_phone" placeholder="8 number min" required><br><br>
                                 <label for="store_email">Store Email:</label>
                                 <input type="email" id="store_email" name="store_email" required><br><br>
                                 <label for="store_street">Store Street:</label>
@@ -390,7 +399,8 @@ echo "<h1>Insert</h1>";
 
 
         } else if (add == "employee") {
-            
+            $('#back-link').attr('href', 'index.php?action=GestionIT&click=employee');
+
             $(".form").append(`
                 <label for="store_id">Store:</label>
                 <select id="store_id" name="store_id">
@@ -422,7 +432,7 @@ echo "<h1>Insert</h1>";
                 
                 <input type="email" id="employee_email" name="employee_email" required><br><br>
                 <label for="employee_password">Employee Password:</label>
-                <input type="password" id="employee_password" name="employee_password" required><br><br>
+                <input type="password" id="employee_password" name="employee_password" placeholder="6 character min" required><br><br>
                
             `);
             let submit = document.getElementById("submit");
@@ -489,7 +499,7 @@ echo "<h1>Insert</h1>";
         };
     });
 </script>
-<a href="index.php?action=GestionIT" class="btn btn-warning mb-4">Back</a>
+<a id="back-link" href="index.php?action=GestionIT" class="btn btn-warning mb-4">Back</a>
     <div class="card shadow p-4">
         <h2 class="text-center mb-4">Insert</h2>
         <div class="insertion">

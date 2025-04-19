@@ -12,6 +12,7 @@ echo "<h1>Insert</h1>";
         console.log(add);
 
         if (add == "product") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=produit');
             console.log("add product");
             $(".form").append(`
                 <label for="product_name">Product Name:</label>
@@ -142,6 +143,7 @@ echo "<h1>Insert</h1>";
                 });
             }
         } else if (add == "brand") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=brand');
             $(".form").append(`
                 <label for="brand_name">Brand Name:</label>
                 <input type="text" id="brand_name" name="brand_name" required><br><br>
@@ -179,6 +181,7 @@ echo "<h1>Insert</h1>";
                 });
             }
         } else if (add == "category") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=category');
             $(".form").append(`
                 <label for="category_name">Category Name:</label>
                 <input type="text" id="category_name" name="category_name" required><br><br>
@@ -216,6 +219,7 @@ echo "<h1>Insert</h1>";
                 });
             }
         } else if (add == "stock") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=stock');
             $(".form").append(`
                 <label for="product_id">Product:</label>
                 <select id="product_id" name="product_id">
@@ -328,6 +332,8 @@ echo "<h1>Insert</h1>";
                 });
             }
         } else if (add == "store") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=store');
+
             $(".form").append(`
                 <label for="store_name">Store Name:</label>
                 <input type="text" id="store_name" name="store_name" required><br><br>
@@ -394,7 +400,7 @@ echo "<h1>Insert</h1>";
 
     });
 </script>
-<a href="index.php?action=GestionE" class="btn btn-warning mb-4">Back</a>
+<a id="back-link" href="index.php?action=GestionE" class="btn btn-warning mb-4">Back</a>
     <div class="card shadow p-4">
         <h2 class="text-center mb-4">Insert</h2>
         <div class="insertion">

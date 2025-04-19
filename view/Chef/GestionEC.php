@@ -164,7 +164,7 @@ include_once("www/Chef/headerEC.php");
                         type: "GET",
                         dataType: "json",
                         success: function(data) {
-                            $('#table').html("<thead><tr><th>id</th><th>Employee Name</th><th>Email</th><th>Role</th></tr></thead>");
+                            $('#table').html("<thead><tr><th>id</th><th>Employee Name</th><th>Email</th><th>Role</th><th>Store</th></tr></thead>");
                             data.forEach(employee => {
                                 console.log(employee);
                                 $("#table").append(`
@@ -173,6 +173,7 @@ include_once("www/Chef/headerEC.php");
                                     <td>${employee.employee_name}</td>
                                     <td>${employee.employee_email}</td>
                                     <td>${employee.employee_role}</td>
+                                    <td>${employee.store_id.store_name}</td>
                                 </tr>
                             `);
                             });
@@ -206,6 +207,13 @@ include_once("www/Chef/headerEC.php");
                 $("#stock").trigger("click");
             } else if (click == "store") {
                 $("#store").trigger("click");
+            }
+            else if (click == "employee") {
+                $("#employee").trigger("click");
+            }
+            else {
+                $('#table').html("Please choose an option");
+                return;
             }
         });
     </script>

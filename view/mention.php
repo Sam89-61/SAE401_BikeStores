@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <a href="index.php">Retour</a>
+    <a href="index.php">Back</a>
     <main>
         <h1>Legal Notice</h1>
 
@@ -41,10 +41,10 @@
             <h2>1. Website Owner</h2>
             <p>
                 Business Name: BikeStore<br>
-                Legal Structure: BikeStore<br>
-                Registered Address: 95060 <br>
-                EIN or Registration Number: [5655]<br>
-                Email Contact:bikestore@gmail.com<br>
+                Legal Structure: Sole Proprietorship<br>
+                Registered Address: 95060, California, USA<br>
+                EIN or Registration Number: 5655<br>
+                Email Contact: bikestore@gmail.com<br>
                 Phone Number: (831) 476-4321
             </p>
         </section>
@@ -86,7 +86,7 @@
             <h2>6. Privacy and Data Protection</h2>
             <p>
                 We respect your privacy and comply with relevant U.S. laws such as the California Consumer Privacy Act (CCPA) and Children’s Online Privacy Protection Act (COPPA), where applicable.<br>
-                For more information, please review our [Privacy Policy].
+                For more information, please review our Privacy Policy.
             </p>
         </section>
 
@@ -101,8 +101,8 @@
         <section>
             <h2>8. Governing Law</h2>
             <p>
-                This legal notice is governed by the laws of the State of [Insert Your State] and applicable federal laws of the United States.<br>
-                Any disputes shall be subject to the exclusive jurisdiction of the courts located in that state.
+                This legal notice is governed by the laws of the State of California and applicable federal laws of the United States.<br>
+                Any disputes shall be subject to the exclusive jurisdiction of the courts located in California.
             </p>
         </section>
 
@@ -110,7 +110,7 @@
             <h2>9. Contact</h2>
             <p>
                 For any questions regarding this legal notice, please contact us at:<br>
-                📧 [bikestore@gmail.com]
+                📧 bikestore@gmail.com
             </p>
         </section>
     </main>

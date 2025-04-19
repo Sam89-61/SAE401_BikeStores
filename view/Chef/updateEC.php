@@ -8,6 +8,7 @@ echo "<h1>Update</h1>";
     $(document).ready(function() {
         let modif = "<?php echo $_GET["modif"] ?>";
         if (modif == "produit") {
+            $('#back-link').attr('href', 'index.php?action=GestionEC&click=produit');
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=product&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -107,6 +108,7 @@ echo "<h1>Update</h1>";
 
         }
         if (modif == "brand") {
+            $('#back-link').attr('href', 'index.php?action=GestionEC&click=brand');
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=brand&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -146,6 +148,7 @@ echo "<h1>Update</h1>";
             }
         }
         if (modif == "category") {
+            $('#back-link').attr('href', 'index.php?action=GestionEC&click=category');
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=categorie&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -194,6 +197,7 @@ echo "<h1>Update</h1>";
 
         }
         if (modif == "stock") {
+            $('#back-link').attr('href', 'index.php?action=GestionEC&click=stock');
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=stock&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -238,6 +242,7 @@ echo "<h1>Update</h1>";
             }
         }
         if (modif == "store") {
+            $('#back-link').attr('href', 'index.php?action=GestionEC&click=store');
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=store&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -248,7 +253,7 @@ echo "<h1>Update</h1>";
                         <input type="text" id="store_name" name="store_name" value="${data[0].store_name}">
                         <input type="hidden" id="store_id" name="store_id" value="${data[0].store_id}"><br><br>
                         <label for="store_phone">Store Phone:</label>
-                        <input type="text" id="store_phone" name="store_phone" value="${data[0].phone}"><br><br>
+                        <input type="text" id="store_phone" name="store_phone" placeholder="8 number min" value="${data[0].phone}"><br><br>
                         <label for="store_email">Store Email:</label>
                         <input type="text" id="store_email" name="store_email" value="${data[0].email}"><br><br>
                         <label for="store_street">Store Street:</label>
@@ -291,7 +296,7 @@ echo "<h1>Update</h1>";
         }
     });
 </script>
-<a href="index.php?action=GestionEC" class="btn btn-warning mb-4">Back</a>
+<a id="back-link" href="index.php?action=GestionEC" class="btn btn-warning mb-4">Back</a>
     <div class="card shadow p-4">
         <div class="modification">
             <form method="POST" class="form row g-3">

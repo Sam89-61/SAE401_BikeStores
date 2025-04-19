@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body> 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black w-100">
             <div class="container-fluid">
@@ -58,5 +58,5 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> 
     <main>

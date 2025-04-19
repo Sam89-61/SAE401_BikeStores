@@ -8,6 +8,7 @@ echo "<h1>Update</h1>";
     $(document).ready(function() {
         let modif = "<?php echo $_GET["modif"] ?>";
         if (modif == "produit") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=produit');
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=product&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -107,6 +108,8 @@ echo "<h1>Update</h1>";
 
         }
         if (modif == "brand") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=brand');
+
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=brand&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -146,6 +149,8 @@ echo "<h1>Update</h1>";
             }
         }
         if (modif == "category") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=category');
+
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=categorie&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -194,6 +199,7 @@ echo "<h1>Update</h1>";
 
         }
         if (modif == "stock") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=stock');
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=stock&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -238,6 +244,8 @@ echo "<h1>Update</h1>";
             }
         }
         if (modif == "store") {
+            $('#back-link').attr('href', 'index.php?action=GestionE&click=store');
+
             $.ajax({
                 url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=store&id=<?php echo $_GET["id"] ?>",
                 type: "GET",
@@ -291,7 +299,7 @@ echo "<h1>Update</h1>";
         }
     });
 </script>
-<a href="index.php?action=GestionE" class="btn btn-warning mb-4">Back</a>
+<a id="back-link" href="index.php?action=GestionE" class="btn btn-warning mb-4">Back</a>
     <div class="card shadow p-4">
         <div class="modification">
             <form method="POST" class="form row g-3">
