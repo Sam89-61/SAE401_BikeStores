@@ -10,7 +10,7 @@ include_once("www/IT/headerIT.php");
         let id=<?php echo $_SESSION['AccountEmployee']["id"]; ?>;
         // Load user information
         $.ajax({
-            url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=employee&id="+id,
+            url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=employee&id="+id+"&KEY=e8f1997c763",
 
             type: "GET",
             dataType: "json",

@@ -165,7 +165,7 @@ include_once("www/IT/headerIT.php");
                 $(".insert").empty();
                 $(".insert").append("<a href='index.php?action=insertIT&add=employee'>Add Employee</a>");
                 $.ajax({
-                    url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=employees",
+                    url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=employees&KEY=e8f1997c763",
                     type: "GET",
                     dataType: "json",
                     success: function(data) {

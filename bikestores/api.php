@@ -23,6 +23,10 @@ switch ($request_method) {
         }
         switch ($_REQUEST["actionGet"]) {
             case "employees":
+                if (!isset($_REQUEST['KEY']) || $_REQUEST['KEY'] !== "e8f1997c763") {
+                    echo json_encode(["error" => "key required to get employee"]);
+                    break;
+                }
                 $employees = $entityManager->getRepository('Entity\Employees')->getAllEmployee();
                 if ($employees == null) {
                     echo json_encode(["error" => "No employees found"]);
@@ -32,6 +36,10 @@ switch ($request_method) {
                 echo json_encode($employees);
                 break;
             case "employee":
+                if (!isset($_REQUEST['KEY']) || $_REQUEST['KEY'] !== "e8f1997c763") {
+                    echo json_encode(["error" => "key required to get employee"]);
+                    break;
+                }
                 if (!isset($_REQUEST["id"])) {
                     echo json_encode(["error" => "No ID provided"]);
                     break;
@@ -45,6 +53,10 @@ switch ($request_method) {
                 echo json_encode($employee);
                 break;
             case "employeeByStore":
+                if (!isset($_REQUEST['KEY']) || $_REQUEST['KEY'] !== "e8f1997c763") {
+                    echo json_encode(["error" => "key required to get employee"]);
+                    break;
+                }
                 if (!isset($_REQUEST["id"])) {
                     echo json_encode(["error" => "No ID provided"]);
                     break;

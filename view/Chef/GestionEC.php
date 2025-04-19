@@ -160,7 +160,7 @@ include_once("www/Chef/headerEC.php");
                     $(".insert").empty();
                     $(".insert").append("<a href='index.php?action=insertEC&add=employee'>Add Employee</a>");
                     $.ajax({
-                        url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=employeeByStore&id=" + <?php echo $_SESSION['StoreEmployee']; ?>,
+                        url: "https://bikestoresab.alwaysdata.net/bikestores/api.php?actionGet=employeeByStore&id=" + <?php echo $_SESSION['StoreEmployee']; ?>+"&KEY=e8f1997c763",
                         type: "GET",
                         dataType: "json",
                         success: function(data) {
