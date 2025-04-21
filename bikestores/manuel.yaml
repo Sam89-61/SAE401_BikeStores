@@ -19,7 +19,7 @@ paths:
           required: true
           schema:
             type: string
-          description: The API key for authentication.
+          description: The API key for authentication is required because it contains sensitive data (employee info).
       responses:
         "200":
           description: A list of employees
@@ -42,7 +42,7 @@ paths:
         required: true
         schema:
           type: string
-        description: The API key for authentication.
+        description: The API key for authentication is required because it contains sensitive data (employee info)..
     get:
       summary: Get employee by ID
       responses:
@@ -67,7 +67,7 @@ paths:
           required: true
           schema:
             type: string
-          description: The API key for authentication.
+          description: The API key for authentication is required because it contains sensitive data (employee info).
       responses:
         "200":
           description: List of employees in the store
