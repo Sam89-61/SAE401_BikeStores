@@ -1,4 +1,15 @@
 <?php
+/**
+ * Entity insertion page for BikeStores IT employees.
+ *
+ * Allows IT employees to dynamically add a product, brand, category, stock, store, or employee via an interactive form.
+ * The form fields are dynamically generated based on the entity to be inserted (GET["add"]).
+ * Uses AJAX to load dropdown lists (brands, categories, products, stores) and to send data to the BikeStores API.
+ * Displays a success or error message based on the API response, then resets the form if necessary.
+ *
+ * @package view\IT
+ * @version 1.0
+ */
 $page = "insert";
 include_once("www/IT/headerIT.php");
 echo "<h1>Insert</h1>";

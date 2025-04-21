@@ -1,4 +1,14 @@
 <?php
+/**
+ * Client store page of the BikeStores website.
+ *
+ * Displays the list of products with dynamic filters (brand, category, price, year).
+ * Uses AJAX to load products, brands, and categories from the API.
+ * Dynamically updates the display based on the filters selected by the user.
+ *
+ * @package view\Client
+ * @version 1.0
+ */
 $page = "magasinC";
 include_once("www/Client/headerC.php");
 ?>

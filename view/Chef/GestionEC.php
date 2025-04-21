@@ -1,4 +1,16 @@
+
 <?php
+/**
+ * Management page for entities for BikeStores Chef employees.
+ *
+ * Allows Chef employees to manage products, brands, categories, stocks, stores, and employees.
+ * Dynamically displays management tables based on the selected entity (product, brand, category, stock, store, employee).
+ * Uses AJAX to load, insert, update, and delete data via the BikeStores API.
+ * Buttons allow navigation between different entities and access to add/update forms.
+ *
+ * @package view\Chef
+ * @version 1.0
+ */
 $page = "gestionEC";
 include_once("www/Chef/headerEC.php");
 ?>

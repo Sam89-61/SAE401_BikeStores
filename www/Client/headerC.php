@@ -1,3 +1,15 @@
+<?php
+/**
+ * Header template for the Client area of the BikeStores website.
+ *
+ * Includes meta tags, stylesheets, and the navigation bar for client users.
+ * Dynamically loads additional CSS files based on the current page.
+ * Displays navigation links for Home and Stores, as well as the user account icon.
+ *
+ * @package www\Client
+ * @version 1.0
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 

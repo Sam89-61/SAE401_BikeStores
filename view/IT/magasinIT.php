@@ -1,4 +1,15 @@
 <?php
+/**
+ * Product catalog page for BikeStores IT employees.
+ *
+ * Displays the list of available products with dynamic filters (brand, category, price, year).
+ * Uses AJAX to load products, brands, and categories from the BikeStores API.
+ * Dynamically updates the product display based on the filters selected by the user.
+ *
+ * @package view\IT
+ * @version 1.0
+ */
+
 $page = "magasinIT";
 include_once("www/IT/headerIT.php");
 ?>

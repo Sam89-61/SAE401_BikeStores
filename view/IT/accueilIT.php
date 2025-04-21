@@ -1,4 +1,13 @@
 <?php
+/**
+ * IT employee homepage for the BikeStores website.
+ *
+ * Displays the interactive map of stores using Leaflet for IT employees.
+ * Can be extended with IT-specific features.
+ *
+ * @package view\IT
+ * @version 1.0
+ */
 $page="accueilIT";
 include_once("www/IT/headerIT.php");
 ?>

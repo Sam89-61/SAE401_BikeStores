@@ -1,4 +1,15 @@
 <?php
+/**
+ * Login page for the BikeStores website.
+ *
+ * Displays a login form for all user types (Employee, Chef, IT).
+ * Clears authentication cookies for all user types on load.
+ * Shows example accounts for demonstration purposes.
+ * Displays error messages if login fails.
+ *
+ * @package view
+ * @version 1.0
+ */
 setcookie("emailE", "", 0);
 setcookie("mdpE", "", 0);
 setcookie("emailEC", "", 0);

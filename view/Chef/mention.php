@@ -1,3 +1,16 @@
+<?php
+/**
+ * Legal notice page for the BikeStores website (Chef area).
+ *
+ * Displays mandatory legal information regarding the publisher, hosting provider, intellectual property,
+ * terms of use, limitation of liability, data protection, cookies, applicable law, and contact details.
+ *
+ * This page is static and does not contain any PHP logic.
+ *
+ * @package view\Chef
+ * @version 1.0
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 

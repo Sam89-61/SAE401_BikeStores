@@ -1,4 +1,14 @@
 <?php
+/**
+ * Chef employee homepage for the BikeStores website.
+ *
+ * Displays the interactive map of stores using Leaflet for Chef employees.
+ * Can be extended with Chef-specific features.
+ *
+ * @package view\Chef
+ * @version 1.0
+ */
+
 $page="accueilE";
 include_once("www/Chef/headerEC.php");
 ?>

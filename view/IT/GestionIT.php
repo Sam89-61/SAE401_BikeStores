@@ -1,4 +1,15 @@
 <?php
+/**
+ * Management page for entities for BikeStores IT employees.
+ *
+ * Allows IT employees to manage products, brands, categories, stocks, stores, and employees.
+ * Dynamically displays management tables based on the selected entity (product, brand, category, stock, store, employee).
+ * Uses AJAX to load, insert, update, and delete data via the BikeStores API.
+ * Buttons allow navigation between different entities and access to add/update forms.
+ *
+ * @package view\IT
+ * @version 1.0
+ */
 $page = "gestionIT";
 include_once("www/IT/headerIT.php");
 ?>

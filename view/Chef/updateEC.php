@@ -1,4 +1,16 @@
+
 <?php
+/**
+ * Entity update page for BikeStores Chef employees.
+ *
+ * Allows Chef employees to update a product, brand, category, stock, or store via an interactive form.
+ * The form fields are dynamically generated based on the entity to be updated (GET["modif"]).
+ * Uses AJAX to load current entity data and dropdown lists (brands, categories, products, stores), and to send updates to the BikeStores API.
+ * Displays a success or error message based on the API response.
+ *
+ * @package view\Chef
+ * @version 1.0
+ */
 $page = "update";
 include_once("www/Chef/headerEC.php");
 echo "<h1>Update</h1>";

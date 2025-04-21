@@ -1,3 +1,16 @@
+<?php
+/**
+ * Entity deletion script for the BikeStores employee module.
+ *
+ * Dynamically deletes a product, brand, category, stock, or store via AJAX.
+ * Sends a DELETE request to the BikeStores API based on the type of entity to delete.
+ * Displays a success or error message depending on the API response, then redirects to the corresponding management page.
+ *
+ * @package view\Employee
+ * @version 1.0
+ */
+?>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>

@@ -1,4 +1,14 @@
 <?php
+/**
+ * IT employee account management page for the BikeStores website.
+ *
+ * Allows IT employees to view and update their personal information (username, email, password).
+ * Data is dynamically loaded and updated via AJAX with the BikeStores API.
+ * Displays success or error messages based on the API response.
+ *
+ * @package view\IT
+ * @version 1.0
+ */
 $page = "account";
 include_once("www/IT/headerIT.php");
 

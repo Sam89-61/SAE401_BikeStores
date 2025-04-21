@@ -1,3 +1,15 @@
+<?php
+/**
+ * Header template for the Chef area of the BikeStores website.
+ *
+ * Includes meta tags, stylesheets, and the navigation bar for Chef users.
+ * Dynamically loads additional CSS files based on the current page.
+ * Displays navigation links for Home, Stores, and Management, as well as user account and logout icons.
+ *
+ * @package www\Chef
+ * @version 1.0
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 

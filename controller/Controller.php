@@ -1,4 +1,14 @@
 <?php
+/**
+ * Main controller for the BikeStores website.
+ *
+ * Handles routing, authentication, and session management for all user types (Employee, Chef, IT).
+ * Determines the correct view to load based on user role, cookies, and requested action.
+ * Manages login, logout, and redirection to appropriate pages.
+ *
+ * @package controller
+ * @version 1.0
+ */
 require __DIR__ . "../../bootstrap.php";
 
 use Entity\Employees;

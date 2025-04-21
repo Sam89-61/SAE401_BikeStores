@@ -1,4 +1,14 @@
-
+<?php
+/**
+ * Footer template for the BikeStores website.
+ *
+ * Displays the legal notice link and copyright.
+ * Includes Bootstrap JS and a script to close the navbar on navigation link or icon click.
+ *
+ * @package www
+ * @version 1.0
+ */
+?>
 <footer class="bg-black text-white py-4">
 
         <div class="text-center mt-3">

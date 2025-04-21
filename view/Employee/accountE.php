@@ -1,4 +1,14 @@
 <?php
+/**
+ * Employee account management page for the BikeStores website.
+ *
+ * Allows the employee to view and update their personal information (name, email, password).
+ * Data is dynamically loaded and updated via AJAX with the BikeStores API.
+ *
+ * @package view\Employee
+ * @version 1.0
+ */
+
 $page = "account";
 include_once("www/Employee/headerE.php");
 
